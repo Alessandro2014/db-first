@@ -1,26 +1,27 @@
-ENTITA' CONCESSIONARIO
-NOME TABELLA: AUTO
+ENTITY - DEALER
+TABLE NAME - CAR
 
 id - INT - NOT_NULL - UNIQUE - AUTO_INCREMENT
-marca - VARCHAR(20) - NOT_NULL
-modello - VARCHAR(50) - NOT_NULL
-immagine - VARCHAR(255) - NULL
-prezzo - FLOAT (5,3) - NOT_NULL
-allestimento - VARCHAR(50) - NULL
-alimentazione - VARCHAR(50) - NOT_NULL
-km_percorsi - FLOAT (6,3) - NOT_NULL
+brand - VARCHAR(20) - NOT_NULL
+model - VARCHAR(50) - NOT_NULL
+image - VARCHAR(255) - NULL
+price - FLOAT (5,3) - NOT_NULL
+equipment - VARCHAR(50) - NULL
+power_self - VARCHAR(50) - NOT_NULL
+number_places - TINYNT - NULL
+crossed_km - FLOAT (6,3) - NOT_NULL
 cavalli - VARCHAR(3) - NOT_NULL
 kw - VARCHAR(3) - NOT_NULL
-cambio - VARCHAR(30) - NOT_NULL
-consumo_medio - FLOAT(3,1) - NULL
-classe_emissioni - TINYNT - NULL
-emissioni_co2 - TINYNT - NULL
-anno di immatricolazione - TIMESTAMP(MM/AAAA) - NOT_NULL
-stato_condizioni -  VARCHAR(10) - NOT_NULL
-in_garanzia - BOOL[TINYINT(1)] - NOT_NULL
+gearing_type - VARCHAR(30) - NOT_NULL
+consumption - FLOAT(3,1) - NULL
+emission_class - TINYNT - NULL
+emission_label - TINYNT - NULL
+first_registration - TIMESTAMP(MM/AAAA) - NOT_NULL
+conditions -  VARCHAR(10) - NOT_NULL
+is_warranty - BOOL[TINYINT(1)] - NOT_NULL
 confort - TEXT - NULL
 media - TEXT - NULL
-sicurezza - TEXT - NULL
+security - TEXT - NULL
 extra - TEXT - NULL
-n_precedenti_propietari - VARCHAR(1) - NOT_NULL - DEFAULT("1")
-neopatentati - BOOL[TINYINT(1)] - NOT_NULL
+n_previous_owner - VARCHAR(1) - NOT_NULL - DEFAULT("1")
+for_new_drivers - BOOL[TINYINT(1)] - NOT_NULL
