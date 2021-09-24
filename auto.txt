@@ -1,0 +1,26 @@
+ENTITA' CONCESSIONARIO
+NOME TABELLA: AUTO
+
+id - INT - NOT_NULL - UNIQUE - AUTO_INCREMENT
+marca - VARCHAR(20) - NOT_NULL
+modello - VARCHAR(50) - NOT_NULL
+immagine - VARCHAR(255) - NULL
+prezzo - FLOAT (5,3) - NOT_NULL
+allestimento - VARCHAR(50) - NULL
+alimentazione - VARCHAR(50) - NOT_NULL
+km_percorsi - FLOAT (6,3) - NOT_NULL
+cavalli - VARCHAR(3) - NOT_NULL
+kw - VARCHAR(3) - NOT_NULL
+cambio - VARCHAR(30) - NOT_NULL
+consumo_medio - FLOAT(3,1) - NULL
+classe_emissioni - TINYNT - NULL
+emissioni_co2 - TINYNT - NULL
+anno di immatricolazione - TIMESTAMP(MM/AAAA) - NOT_NULL
+stato_condizioni -  VARCHAR(10) - NOT_NULL
+in_garanzia - BOOL[TINYINT(1)] - NOT_NULL
+confort - TEXT - NULL
+media - TEXT - NULL
+sicurezza - TEXT - NULL
+extra - TEXT - NULL
+n_precedenti_propietari - VARCHAR(1) - NOT_NULL - DEFAULT("1")
+neopatentati - BOOL[TINYINT(1)] - NOT_NULL
